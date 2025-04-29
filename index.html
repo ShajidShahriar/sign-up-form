@@ -7,37 +7,63 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    
+    <div class="logo">
+        <img src="logo.png" alt="logo" height="200px">
+        <div id="logotext">ggs,that's it!</div>
+    </div> 
     <div id="backglass">
         <form action="">
             <h1>lets do this</h1>
             <div id="tag">
                 <div id="input">
-                    <label for="name">GAMER TAG</label>
-                    <input type="text" id="name" name="gamer-tag">
+                    <label for="name">gamer tag</label>
+                    <input  type="text" 
+                            id="name" 
+                            name="gamer-tag"
+                            minlength="6"
+                            maxlength="15"
+                            required>
                 </div>
             </div>
             <div id="mail">
                 <div id="input">
-                    <label for="mail">EMAIL</label>
-                    <input type="email" id="mail" name="user-email">
+                    <label for="mail">email</label>
+                    <input  type="email" 
+                            id="mail" 
+                            name="user-email"
+                            required>
                 </div>
             </div>
             <div id="pass">
                 <div id="input">
-                    <label for="pwd">PASSWORD</label>
-                    <input type="password" id="pwd" name="user-pwd">
+                    <label for="pwd">password</label>
+                    <input  type="password" 
+                            id="pwd" 
+                            name="user-pwd"
+                            required>
                 </div>
                 <div id="input">
-                    <label for="pwd">CONFIRM PASSWORD</label>
-                    <input type="password" id="pwd" name="confirmed-pwd">
+                    <label for="pwd">confirm password</label>
+                    <input  type="password" 
+                            id="pwd" 
+                            name="confirmed-pwd"
+                            required>
                 </div>
             </div>
             <div id="button">
                 <button type="submit">Join The Party </button>
             </div>
+            <div class="bottom">
+                <p>already have an account ?</p>
+                <button id="sign-in">sign in</button>
+            </div>
+
         </form>
     </div>
+    <footer id="footer">
+        <p>© 2025 Shajid Shahriar. All rights reserved.</p>
+      </footer>
+      
     
 </body>
 </html>

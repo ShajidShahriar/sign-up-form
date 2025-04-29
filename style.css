@@ -17,8 +17,9 @@
 body{
     padding: 0%;
     margin: 0;
-    width: 100vh;
+    width: 100vw;
     height: 100vh;
+    min-width: 300px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -42,8 +43,10 @@ form{
 }
 #backglass{
     
-    width: 535px;
-    height: 500px;
+    width: 560px;
+    height: 520px;
+    min-width: 300px;
+    flex-shrink: 1;
     background: rgba( 255, 255, 255, 0.1 );
     box-shadow: 0 8px 32px 0 rgba(31, 119, 135, 0.37);
     backdrop-filter: blur( 8px );
@@ -52,7 +55,8 @@ form{
     border: 1px solid rgba( 255, 255, 255, 0.18 );
 }
 #input{
-    width: 440px;
+    width: 470px;
+    min-width: 300pxs;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -60,24 +64,28 @@ form{
     
 }
 #pass{
-    width: 410px;
+    width: 400px;
     display: flex;
-    gap:10px
+    gap:20px;
+    
+    
 }
 #input label{
     margin-bottom: 5px;
     color:#ccc;
     font-weight: bold;
-    letter-spacing: 1px;
+    letter-spacing: 2px;
 }
 
 #input input{
     padding: 10px;
     border:none;
+    color: #e8ecec;
+    font-family:'Roboto Mono',monospace ;
     border-radius: 10px;
     background: rgba(0, 0, 0, 0.5);
-    color: rgb(0, 0, 0);
     font-size: 1em;
+    letter-spacing: 2px;
     outline: none;
     box-shadow: 0 0 0 0.2px #81fdff;
 
@@ -88,7 +96,7 @@ form{
 }
 button {
     width: 100%;
-    max-width: 440px;
+    max-width: 470px;
     padding: 12px 20px;
     margin-top: 20px;
     border: none;
@@ -109,5 +117,47 @@ button:hover, button:focus {
     box-shadow: 0 0 20px rgba(0, 255, 255, 0.2), 0 0 7px rgba(0, 255, 255, 0.5);
     transform: scale(1.05);
 }
+.logo{
+    display: flex;
+    padding-left: 20px;
 
+}
+#logotext{
+    color: azure;
+    font-size: larger;
+    align-self: flex-end;
+    padding-bottom: 50px;
+}
+.bottom{
+    display: flex;
+    color: aliceblue;
+    padding-top: 0px;
+    padding-left: 60px;
+}
+#sign-in{
+    all: unset; /* resets all default button styles */
+    color: #00bfff; /* or any blue you want */
+    font-weight: bold;
+    cursor: pointer;
+    font-family: inherit;
 
+}
+#sign-in:hover{
+    text-decoration: underline;
+
+}
+#footer {
+    width: 100%;
+    padding: 15px 0;
+    margin-top: 100px;
+    text-align: center;
+    background: rgba(255, 255, 255, 0.05);
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+    border-top: 1px solid rgba(255, 255, 255, 0.18);
+    font-family: 'Roboto Mono', monospace;
+    font-size: 0.9em;
+    color: #ccc;
+  }
+  
