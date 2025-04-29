@@ -118,6 +118,7 @@ button:hover, button:focus {
     transform: scale(1.05);
 }
 .logo{
+    padding-top: 100px;
     display: flex;
     padding-left: 20px;
 
